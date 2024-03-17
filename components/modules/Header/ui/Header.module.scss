@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo_wrapper {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.info_phone {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    .phone,
+    span {
+      filter: invert(50%) sepia(99%) saturate(1175%) hue-rotate(3deg)
+        brightness(97%) contrast(96%);
+    }
+  }
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.phone {
+  margin-left: 12px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 60px;
+
+  @media (max-width: 768px) {
+    gap: 0 30px;
+  }
+
+  @media (max-width: 600px) {
+    gap: 0 12px;
+  }
+}

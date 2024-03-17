@@ -1,0 +1,42 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 10px;
+  padding-top: 30px;
+
+  @media (max-width: 768px) {
+    gap: 0 3px;
+  }
+}
+
+.nav_item {
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #464646;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    padding: 3px;
+  }
+
+  @media (max-width: 320px) {
+    padding: 2px;
+  }
+}
+
+.active {
+  background-color: #ffffff;
+}
+
+.arrow {
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "en": {
+    "menu": {
+      "main": "Main",
+      "entomophages": "Entomophages",
+      "spraying": "Spraying",
+      "cartography": "Cartography and monitoring",
+      "catalog": "Product Catalog",
+      "news": "News",
+      "about": "About company",
+      "contacts": "Contacts"
+    }
+  },
+  "ru": {
+    "menu": {
+      "main": "Главная",
+      "entomophages": "Энтомофаги",
+      "spraying": "Опрыскивание",
+      "cartography": "Картография и мониторинг",
+      "catalog": "Каталог продукции",
+      "news": "Новости",
+      "about": "О компании",
+      "contacts": "Контакты"
+    }
+  }
+}
