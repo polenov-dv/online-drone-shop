@@ -27,24 +27,24 @@
   position: absolute;
   z-index: 2;
   right: 685px;
-  bottom: 125px;
+  bottom: 80px;
   transform: rotate(25deg);
 
   @media (width <= 768px) {
     right: 268px;
-    bottom: 80px;
+    bottom: 68px;
     transform: rotate(35deg);
   }
 
   @media (width <= 400px) {
     top: 155px;
-    right: 345px;
+    right: 350px;
     transform: rotate(35deg);
   }
 
   @media (width <= 320px) {
-    top: 155px;
-    right: 235px;
+    top: 152px;
+    right: 244px;
     transform: rotate(35deg);
   }
 }
@@ -56,15 +56,12 @@
 .info {
   display: flex;
   flex-direction: column;
-
   width: 663px;
   margin-left: 80px;
-  padding-top: 90px;
 
   @media (width <= 768px) {
     width: 300px;
     margin-left: 30px;
-    padding-top: 30px;
   }
 
   @media (width <= 400px) {
@@ -73,9 +70,11 @@
 }
 
 .info_title {
+  padding-top: 70px;
   font-size: 72px;
 
   @media (width <= 768px) {
+    padding-top: 30px;
     font-size: 30px;
   }
 }
@@ -84,14 +83,14 @@
   position: relative;
   display: flex;
   justify-content: flex-end;
-  padding-top: 27px;
+  padding-top: 20px;
 
   @media (width <= 768px) {
+    padding-top: 0;
     padding-left: 320px;
   }
 
   @media (width <= 400px) {
-    padding-top: 0;
     padding-left: 300px;
   }
 }
@@ -115,7 +114,7 @@
   display: flex;
   gap: 0 30px;
   align-items: flex-start;
-  padding-top: 44px;
+  padding-top: 30px;
 
   @media (width <= 768px) {
     padding-top: 0;
@@ -146,8 +145,6 @@
 }
 
 .info_text_item_about {
-  padding-bottom: 55px;
-
   @media (width <= 768px) {
     padding-bottom: 15px;
     font-size: 18px;

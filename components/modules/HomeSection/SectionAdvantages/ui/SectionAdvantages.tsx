@@ -83,7 +83,7 @@ export const SectionAdvantages = () => {
         />
 
         <div className={cls.content}>
-          <Image className={cls.drone_bg} src={droneBgImg} alt='Drone' />
+          <Image className={cls.drone_bg} src={droneBgImg} alt='' />
 
           {sliderContent.map((slide, index) => (
             <div
