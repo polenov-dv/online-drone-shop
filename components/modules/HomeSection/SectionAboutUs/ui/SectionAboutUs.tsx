@@ -28,8 +28,8 @@ export const SectionAboutUs = () => {
             промышлености
           </p>
           <div className={cls.info_drone}>
-            <Image className={cls.line_img} src={lineImg} alt='Line' />
-            <Image className={cls.drone_img} src={droneImg} alt='Drone' />
+            <Image className={cls.line_img} src={lineImg} alt='' />
+            <Image className={cls.drone_img} src={droneImg} alt='' />
           </div>
           <ul className={cls.info_text}>
             <li className={cls.info_text_item}>
