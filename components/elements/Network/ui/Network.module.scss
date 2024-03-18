@@ -2,22 +2,29 @@
   display: flex;
   gap: 0 20px;
 
-  @media (max-width: 600px) {
+  @media (width <= 600px) {
     gap: 0 7px;
   }
 }
 
+.network_img {
+  @media (width <= 600px) {
+    transform: scale(0.6);
+  }
+}
+
 .network_item {
+  cursor: pointer;
+
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 
   width: 33px;
   height: 33px;
+
   border: 2px solid #01b601;
   border-radius: 50%;
-
-  cursor: pointer;
 
   &:hover {
     border-color: #ec8805;
@@ -28,7 +35,7 @@
     }
   }
 
-  @media (max-width: 600px) {
+  @media (width <= 600px) {
     width: 20px;
     height: 20px;
     border: 1px solid #01b601;
@@ -37,10 +44,4 @@
 
 .network_link {
   display: flex;
-}
-
-.network_img {
-  @media (max-width: 600px) {
-    transform: scale(0.6);
-  }
 }

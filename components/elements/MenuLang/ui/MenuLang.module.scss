@@ -1,10 +1,10 @@
 .menu_lang {
   display: flex;
+  gap: 0 20px;
   align-items: center;
   justify-content: center;
-  gap: 0 20px;
 
-  @media (max-width: 600px) {
+  @media (width <= 600px) {
     gap: 0 7px;
   }
 }
@@ -12,7 +12,7 @@
 .lang {
   font-size: 20px;
 
-  @media (max-width: 600px) {
+  @media (width <= 600px) {
     font-size: 12px;
   }
 }

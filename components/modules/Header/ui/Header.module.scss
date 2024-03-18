@@ -9,6 +9,10 @@
   padding: 5px 0;
 }
 
+.phone {
+  margin-left: 12px;
+}
+
 .info_phone {
   display: flex;
   align-items: center;
@@ -21,26 +25,22 @@
     }
   }
 
-  @media (max-width: 600px) {
+  @media (width <= 600px) {
     display: none;
   }
 }
 
-.phone {
-  margin-left: 12px;
-}
-
 .menu {
   display: flex;
+  gap: 0 60px;
   align-items: center;
   justify-content: center;
-  gap: 0 60px;
 
-  @media (max-width: 768px) {
+  @media (width <= 768px) {
     gap: 0 30px;
   }
 
-  @media (max-width: 600px) {
+  @media (width <= 600px) {
     gap: 0 12px;
   }
 }

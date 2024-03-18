@@ -1,5 +1,5 @@
 .logo {
-  @media (max-width: 600px) {
+  @media (width <= 600px) {
     width: 33px;
     height: 30px;
   }
