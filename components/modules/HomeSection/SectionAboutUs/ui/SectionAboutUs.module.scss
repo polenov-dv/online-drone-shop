@@ -27,12 +27,12 @@
   position: absolute;
   z-index: 2;
   right: 685px;
-  bottom: 102px;
+  bottom: 125px;
   transform: rotate(25deg);
 
   @media (width <= 768px) {
     right: 268px;
-    bottom: 70px;
+    bottom: 80px;
     transform: rotate(35deg);
   }
 

@@ -63,9 +63,6 @@ export const SliderAboutUs = ({ activeImg, setBgImg }: SliderAboutUsProps) => {
   const isMedia320 = useMediaQuery(320)
   const isMedia768 = useMediaQuery(768)
 
-  console.log('isMedia320', isMedia320)
-  console.log('isMedia768', isMedia768)
-
   useEffect(() => {
     if (isMedia320) {
       setBgImg(arrayImg[activeSlide].mobile)

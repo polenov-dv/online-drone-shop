@@ -1,19 +1,24 @@
-@import './font.css';
+@import './font';
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: RFRufo;
-  font-weight: 400;
-  font-size: 18px;
-  background-color: #181818;
-  color: #e8e9ea;
-  min-height: 100vh;
+  user-select: none;
+
   display: flex;
   flex-direction: column;
-  user-select: none;
+
+  min-height: 100vh;
+
+  font:
+    18px RFRufo,
+    sans-serif;
+  font-weight: 400;
+  color: #e8e9ea;
+
+  background-color: #181818;
 }
 
 body::-webkit-scrollbar {
@@ -34,16 +39,18 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .container {
-  max-width: 1535px;
+  width: 100%;
+  max-width: 1430px;
   margin: 0 auto;
   padding: 0 15px;
-  width: 100%;
 }
 
 .btn-reset {
+  cursor: pointer;
+
   margin: 0;
   padding: 0;
-  cursor: pointer;
+
   background-color: transparent;
   border: none;
 }
@@ -59,18 +66,20 @@ a {
 }
 
 ul {
-  padding: 0;
   margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
 button {
-  border: none;
-  background-color: transparent;
-  padding: 0;
-  border-radius: 0;
   cursor: pointer;
 
+  padding: 0;
+
   font-size: 24px;
-  color: #ffffff;
+  color: #fff;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
 }

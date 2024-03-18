@@ -1,0 +1,47 @@
+.desc {
+  position: relative;
+  padding-bottom: 60px;
+
+  @media (width <= 768px) {
+    padding-bottom: 40px;
+  }
+
+  @media (width <= 525px) {
+    padding-bottom: 20px;
+  }
+}
+
+.desc_title {
+  font-size: 120px;
+  font-weight: 600;
+  color: rgb(255 255 255 / 20%);
+
+  @media (width <= 1000px) {
+    font-size: 64px;
+  }
+
+  @media (width <= 525px) {
+    font-size: 36px;
+  }
+}
+
+.desc_text {
+  position: absolute;
+  top: 60px;
+  left: 8px;
+
+  font-size: 48px;
+  color: #02e502;
+
+  @media (width <= 1000px) {
+    top: 28px;
+    left: 5px;
+    font-size: 30px;
+  }
+
+  @media (width <= 525px) {
+    top: 11px;
+    left: 4px;
+    font-size: 22px;
+  }
+}
