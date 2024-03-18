@@ -1,11 +1,27 @@
 .nav {
   position: absolute;
-  top: 54px;
+  z-index: 2;
+  top: 82px;
   right: 0;
 
-  width: 271px;
+  width: 270px;
 
-  background-color: rgb(207 150 150 / 95%);
+  opacity: 0;
+  background-color: #1e1f20;
+
+  animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 0.95;
+  }
 }
 
 .nav_content {
