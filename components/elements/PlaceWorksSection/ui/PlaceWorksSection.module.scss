@@ -130,14 +130,14 @@
   }
 
   @media (width <= 700px) {
-    transform: scale(0.8);
     top: -180px;
     left: -130px;
+    transform: scale(0.8);
   }
 
   @media (width <= 500px) {
-    transform: scale(0.365);
     top: -350px;
     left: -415px;
+    transform: scale(0.365);
   }
 }
