@@ -9,6 +9,9 @@
       "news": "News",
       "about": "About company",
       "contacts": "Contacts"
+    },
+    "sectionAboutUs": {
+      "title": "AgroScout - unmanned technologies for agriculture and industry"
     }
   },
   "ru": {
@@ -21,6 +24,9 @@
       "news": "Новости",
       "about": "О компании",
       "contacts": "Контакты"
+    },
+    "sectionAboutUs": {
+      "title": "AgroScout - беспилотные технологии для сельского хозяйства и промышленности"
     }
   }
 }

@@ -2,6 +2,7 @@
 
 import cls from './SectionAboutUs.module.scss'
 import { useState } from 'react'
+import { useLang } from '@/hooks/useLang'
 import Image from 'next/image'
 import { SliderAboutUs } from '@/components/elements/SliderAboutUs'
 import droneImg from '@/public/icon/drone-about-us.svg'
@@ -9,6 +10,7 @@ import lineImg from '@/public/icon/about-us-line.svg'
 
 export const SectionAboutUs = () => {
   const [bgImg, setBgImg] = useState('')
+  const { lang, translation } = useLang()
 
   return (
     <section className={cls.sectionAboutUs}>
@@ -24,8 +26,7 @@ export const SectionAboutUs = () => {
       <div className={`${cls.inner} container`}>
         <div className={cls.info}>
           <p className={cls.info_title}>
-            AgroScout - беспилотные технологии для сельского хозяйства и
-            промышлености
+            {translation[lang].sectionAboutUs.title}
           </p>
           <div className={cls.info_drone}>
             <Image className={cls.line_img} src={lineImg} alt='' />

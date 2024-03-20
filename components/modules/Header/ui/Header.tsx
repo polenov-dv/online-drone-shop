@@ -24,7 +24,7 @@ export const Header = () => {
       </div>
 
       <div className={cls.menu}>
-        <Network />
+        <Network type='header' />
         <MenuLang />
         <MenuNav />
         {menuIsOpen && <Menu />}

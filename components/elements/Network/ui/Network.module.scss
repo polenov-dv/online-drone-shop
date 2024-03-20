@@ -1,13 +1,15 @@
 .network {
   display: flex;
   gap: 0 20px;
+}
 
+.network_header {
   @media (width <= 600px) {
     gap: 0 7px;
   }
 }
 
-.network_img {
+.network_img_header {
   @media (width <= 600px) {
     transform: scale(0.6);
   }
@@ -29,12 +31,15 @@
   &:hover {
     border-color: #ec8805;
 
-    .network_img {
+    .network_img_header,
+    .network_img_footer {
       filter: invert(50%) sepia(99%) saturate(1175%) hue-rotate(3deg)
         brightness(97%) contrast(96%);
     }
   }
+}
 
+.network_item_header {
   @media (width <= 600px) {
     width: 20px;
     height: 20px;

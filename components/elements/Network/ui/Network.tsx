@@ -5,21 +5,66 @@ import vkImg from '@/public/icon/vk.svg'
 import instagramImg from '@/public/icon/instagram.svg'
 import tickTokImg from '@/public/icon/tickTok.svg'
 
-export const Network = () => (
-  <ul className={cls.network}>
-    <li className={cls.network_item}>
+interface NetworkProps {
+  type: 'header' | 'footer'
+}
+
+export const Network = ({ type }: NetworkProps) => (
+  <ul
+    className={
+      type === 'header' ? `${cls.network} ${cls.network_header}` : cls.network
+    }
+  >
+    <li
+      className={
+        type === 'header'
+          ? `${cls.network_item} ${cls.network_item_header}`
+          : cls.network_item
+      }
+    >
       <Link className={cls.network_link} href='/'>
-        <Image className={cls.network_img} src={vkImg} alt='VK' />
+        <Image
+          className={
+            type === 'header' ? cls.network_img_header : cls.network_img_footer
+          }
+          src={vkImg}
+          alt='VK'
+        />
       </Link>
     </li>
-    <li className={cls.network_item}>
+
+    <li
+      className={
+        type === 'header'
+          ? `${cls.network_item} ${cls.network_item_header}`
+          : cls.network_item
+      }
+    >
       <Link className={cls.network_link} href='/'>
-        <Image className={cls.network_img} src={instagramImg} alt='Instagram' />
+        <Image
+          className={
+            type === 'header' ? cls.network_img_header : cls.network_img_footer
+          }
+          src={instagramImg}
+          alt='Instagram'
+        />
       </Link>
     </li>
-    <li className={cls.network_item}>
+    <li
+      className={
+        type === 'header'
+          ? `${cls.network_item} ${cls.network_item_header}`
+          : cls.network_item
+      }
+    >
       <Link className={cls.network_link} href='/'>
-        <Image className={cls.network_img} src={tickTokImg} alt='TickTok' />
+        <Image
+          className={
+            type === 'header' ? cls.network_img_header : cls.network_img_footer
+          }
+          src={tickTokImg}
+          alt='TickTok'
+        />
       </Link>
     </li>
   </ul>
