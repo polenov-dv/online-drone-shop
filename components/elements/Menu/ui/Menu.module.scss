@@ -1,8 +1,8 @@
 .nav {
   position: absolute;
-  z-index: 2;
-  top: 82px;
-  right: 0;
+  z-index: 3;
+  top: 83px;
+  right: -15px;
 
   width: 270px;
 
@@ -10,16 +10,26 @@
   background-color: #1e1f20;
 
   animation: slideIn 1s forwards;
+
+  @media (width <= 768px) {
+    top: 80px;
+    width: 200px;
+  }
+
+  @media (width <= 600px) {
+    top: 42px;
+    width: 200px;
+  }
 }
 
 @keyframes slideIn {
   from {
-    transform: translateX(100%);
+    transform: translateY(-100%);
     opacity: 0;
   }
 
   to {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 0.95;
   }
 }
@@ -28,6 +38,10 @@
   display: flex;
   flex-direction: column;
   padding-top: 18px;
+
+  @media (width <= 768px) {
+    padding-top: 10px;
+  }
 }
 
 .nav_link {
@@ -52,6 +66,12 @@
   background-color: #1e1f20f2;
   border: 2px solid #fff;
   border-radius: 50%;
+
+  @media (width <= 768px) {
+    width: 25px;
+    height: 25px;
+    padding: 15px;
+  }
 }
 
 .nav_text {
@@ -63,6 +83,12 @@
   &:hover {
     color: #02e502;
   }
+
+  @media (width <= 768px) {
+    margin: 10px 0;
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .nav_line {
@@ -70,6 +96,10 @@
   height: 1px;
   margin: 0 auto;
   background-color: #fff;
+
+  @media (width <= 768px) {
+    margin-top: 10px;
+  }
 }
 
 .chats {
@@ -79,4 +109,12 @@
   justify-content: center;
 
   padding: 20px;
+
+  @media (width <= 768px) {
+    padding: 0;
+  }
+}
+
+.chats_item {
+  transform: scale(0.9);
 }

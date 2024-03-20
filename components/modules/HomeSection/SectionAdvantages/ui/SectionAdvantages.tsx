@@ -15,7 +15,6 @@ import droneAdvImg from '@/public/icon/drone-adv.svg'
 import allServicesImg from '@/public/icon/all-services.svg'
 import droneBgImg from '@/public/icon/drone-bg.svg'
 
-//Каталог
 const slideOne = {
   img: peopleImg,
   title: 'Квалифицированные сотрудники',

@@ -69,7 +69,6 @@ export const SliderAboutUs = ({ activeImg, setBgImg }: SliderAboutUsProps) => {
     } else if (isMedia768) {
       setBgImg(arrayImg[activeSlide].tablet)
     } else {
-      console.log('activeSlide', activeSlide)
       setBgImg(arrayImg[activeSlide].main)
     }
   }, [activeSlide, isMedia320, isMedia768])

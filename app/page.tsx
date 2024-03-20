@@ -4,6 +4,7 @@ import { SectionAdvantages } from '@/components/modules/HomeSection/SectionAdvan
 import { SectionClients } from '@/components/modules/HomeSection/SectionClients'
 import { SectionProducts } from '@/components/modules/HomeSection/SectionProducts'
 import { SectionServices } from '@/components/modules/HomeSection/SectionServices'
+import { SectionWhatsNew } from '@/components/modules/HomeSection/SectionWhatsNew'
 import { SectionWhoAreWe } from '@/components/modules/HomeSection/SectionWhoAreWe'
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <SectionWhoAreWe />
       <PlaceWorksSection />
       <SectionClients />
+      <SectionWhatsNew />
     </main>
   )
 }
