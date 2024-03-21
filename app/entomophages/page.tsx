@@ -1,7 +1,9 @@
+import { SectionAboutEntomophages } from '@/components/modules/EntomophagesSection/SectionAboutEntomophages'
+
 export default function EntomophagesPage() {
   return (
     <main>
-      <h1>Entomophage</h1>
+      <SectionAboutEntomophages />
     </main>
   )
 }
